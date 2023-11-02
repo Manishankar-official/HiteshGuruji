@@ -19,16 +19,16 @@ void swap(int *a,int *b){
 }
 
 void bubblesort(int *arr,int n){
-      bool isSwap = false;
+      bool notSwap = true;
   for(int i=0;i<n-1;i++){
     for(int j=0;j<n-1;j++){
       if(arr[j]>arr[j+1]){
         swap(&arr[j],&arr[j+1]);
-        isSwap = true;
+        notSwap = false;
       }
 
       }
-      if(isSwap == false){
+      if(notSwap){
         break;
       }
     }
